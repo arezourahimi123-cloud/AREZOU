@@ -1,1 +1,110 @@
 Personal graphic design portfolio website showcasing creative projects, visual identity and branding.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arezou | Graphic Designer</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #F5F2EC;
+  color: #191919;
+  font-family: Arial, sans-serif;
+}
+nav {
+  padding: 28px 8%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+}
+nav a {
+  color: inherit;
+  text-decoration: none;
+  margin-left: 20px;
+}
+.hero { padding: 120px 10%; }
+small { color: #E97845; letter-spacing: 3px; }
+h1 {
+  font-size: clamp(55px, 10vw, 110px);
+  line-height: 1;
+  margin: 30px 0;
+  letter-spacing: -5px;
+}
+p { line-height: 1.8; color: #666; }
+.hero p { max-width: 480px; }
+button {
+  background: #191919;
+  color: white;
+  border: 0;
+  padding: 16px 28px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+section { padding: 70px 10%; }
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.project {
+  min-height: 240px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background: #E5DCD0;
+}
+.project:nth-child(2) { background: #E9D5C7; }
+.project:nth-child(3) { background: #D9DED5; }
+.project:nth-child(4) { background: #DCD6E3; }
+footer { padding: 50px 10%; border-top: 1px solid #ddd; }
+@media(max-width:600px) {
+  .projects { grid-template-columns: 1fr; }
+  h1 { letter-spacing: -3px; }
+}
+</style>
+</head>
+<body>
+<nav>
+<strong>AREZOU®</strong>
+<div>
+<a href="#work">Work</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<header class="hero">
+<small>GRAPHIC DESIGNER / CREATIVE THINKER</small>
+<h1>Ideas into<br>visual stories.</h1>
+<p>I'm Arezou, an emerging graphic designer passionate about visual identity, typography and creative design.</p>
+<a href="#work"><button>EXPLORE MY WORK ↗</button></a>
+</header>
+
+<section id="work">
+<small>SELECTED PROJECTS</small>
+<h2>My Creative Work</h2>
+<div class="projects">
+<div class="project"><h2>Brand Identity</h2><p>Concept Project / 2026</p></div>
+<div class="project"><h2>Packaging Design</h2><p>Concept Project / 2026</p></div>
+<div class="project"><h2>Editorial Design</h2><p>Concept Project / 2026</p></div>
+<div class="project"><h2>Poster Design</h2><p>Concept Project / 2026</p></div>
+</div>
+</section>
+
+<section id="about">
+<small>ABOUT ME</small>
+<h2>Design with purpose.</h2>
+<p>I'm an emerging graphic designer exploring creativity, simplicity and visual communication.</p>
+</section>
+
+<footer id="contact">
+<h2>Let's create something.</h2>
+<p>Contact: your-email@example.com</p>
+<p>© 2026 AREZOU. All rights reserved.</p>
+</footer>
+</body>
+</html>
